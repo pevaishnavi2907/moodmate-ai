@@ -445,4 +445,12 @@
     right: -4px;
     bottom: 95px;
   }
+  .nav-login,
+.nav-signup,
+.hero-buttons .primary-button,
+.hero-buttons .secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 }
