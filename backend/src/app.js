@@ -5,7 +5,7 @@ import rateLimit from "express-rate-limit";
 import authRoutes from "./routes/authRoutes.js";
 import profileRoutes from "./routes/profileRoutes.js";
 import moodLogRoutes from "./routes/moodLogRoutes.js";
-
+import recommendationRoutes from "./routes/recommendationRoutes.js";
 const app = express();
 
 app.use(cors());
@@ -26,5 +26,5 @@ app.get("/api/health", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/profile", profileRoutes);
 app.use("/api/mood-logs", moodLogRoutes);
-
+app.use("/api/recommendations", recommendationRoutes);
 export default app;
